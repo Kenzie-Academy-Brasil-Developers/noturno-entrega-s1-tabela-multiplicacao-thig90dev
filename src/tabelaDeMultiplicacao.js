@@ -4,8 +4,13 @@ function tabelaMultiplicacao(n) {
     let multArr = [];
     
     for (let linha = 0; linha <= n; linha++) {
-        multArr [linha] = [multArr.length]     
+        multArr [linha] = [multArr.length]  
+        
+        for(let coluna = 0; coluna <= n; coluna++){
+            multArr[linha][1]= multArr.length-1
         }
+        }
+        
     
         console.table(multArr);
        
