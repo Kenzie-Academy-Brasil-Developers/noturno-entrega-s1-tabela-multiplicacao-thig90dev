@@ -1,17 +1,17 @@
-function tabelaMultiplicacao(n) { 
+function tabelaMultiplicacao(numero) { 
     // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
     // TODO: escrever dois loops aninhados para desenhar o array bidimensional e mostrar o restante da tabela no console.
-    let multArr = [];
+    let meuArr = [];
     
-    for (let linha = 0; linha <= n; linha++) {
-        multArr [linha] = [multArr.length]  
+    for (let linha = 0; linha < numero; linha++) {
+        meuArr.push([]);
         
-        for(let coluna = 0; coluna <= n; coluna++){
-            multArr[linha][1]= multArr.length-1
+        for(let coluna = 0; coluna < numero; coluna++){
+            const multiplicacao = coluna * linha;
+
+            meuArr[linha].push(multiplicacao);
         }
-        }
-        
-    
-        console.table(multArr);
+    }        
+       console.table(meuArr);
        
-} console.log(tabelaMultiplicacao(20));
+} tabelaMultiplicacao(10);
